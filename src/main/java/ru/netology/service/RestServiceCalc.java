@@ -10,7 +10,7 @@ public class RestServiceCalc {
         for (int month = 1; month <= 12; month++) {
             if (money >= threshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money =- expense / 3;
+                money = (money - expense) / 3;
             } else {
                 money = money + income - expense;
 
